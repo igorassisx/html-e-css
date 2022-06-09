@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th#media, td#nota {
+            background-color: gray;
+            color: white;
+            text-align: left;
+        }
+
+    </style>
+
+    <title>Tabela</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Area</th>
+                <th rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th rowspan="2">Media</th>
+            </tr>
+
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matematica</td>
+                <td>07.00</td>
+                <td>06.00</td>
+                <td>06.50</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>06.00</td>
+                <td>08.00</td>
+                <td>07.00</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>04.00</td>
+                <td>08.00</td>
+                <td>06.00</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>08.00</td>
+                <td>08.00</td>
+                <td>08.00</td>
+            </tr>
+            <tr>
+                <th colspan="4" id="media">Medias das Exatas</th>
+                <td id="nota">6,875</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>Historia</td>
+                <td>08.00</td>
+                <td>09.00</td>
+                <td>08.50</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>09.00</td>
+                <td>10.00</td>
+                <td>09.50</td>
+            </tr>
+            <tr>
+                <th colspan="4" id="media">Media de Humanas</th>
+                <td id="nota">09.00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
